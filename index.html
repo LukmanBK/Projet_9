@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +11,7 @@
 	<meta name="language" content="fr-FR">
 	<meta name="robots" content="index" />
 	<meta name="description" content="Photographe passionnée par mon métier, je saisis les instants de vos événements ou de vos vies à travers des photographies. Je vous propose mes services (shooting photo, retrouches photos et albums photo)">
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
@@ -19,8 +19,9 @@
 </head>
 <body>
 <header>
+	<div class="top-header">
 	<h1 class="name">Nina Carducci</h1>
-	<nav>  
+	<div class="nav">  
 		<ul>
 			<li><a href="#about">À propos</a></li>
 			<li><a href="#gallery">Galerie</a></li>
@@ -28,7 +29,8 @@
 			<li><a href="#contact">Contact</a></li>
 			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="logo instagram"></a></li>
 		</ul>
-	</nav>
+	</div>
+	</div>
 </header>
 <main>
 <div id="banner">
@@ -41,13 +43,13 @@
 		</div>
 		<div class="carousel-inner">
 			<picture class="carousel-item active">
-				<img src="./assets/images/slider/slide_first_concert.webp" class="d-block w-100" width="1920" height="888" loader="lazy" alt="photo des spectateurs au concert">
+				<img src="./assets/images/slider/slide_first_concert.webp" class="d-block w-100" width="1920" height="888" loading="lazy" alt="photo des spectateurs au concert">
 			</picture>
 			<picture class="carousel-item">
-				<img src="./assets/images/slider/slide_first_marriage.webp" class="d-block w-100" width="1920" height="888" loader="lazy" alt="photo des mariees">
+				<img src="./assets/images/slider/slide_first_marriage.webp" class="d-block w-100" width="1920" height="888" loading="lazy" alt="photo des mariees">
 			</picture>
 			<picture class="carousel-item">
-				<img src="./assets/images/slider/slide_first_tokyo.webp" class="d-block w-100" width="1920" height="888" loader="lazy" alt="photo d un homme qui marche">
+				<img src="./assets/images/slider/slide_first_tokyo.webp" class="d-block w-100" width="1920" height="888" loading="lazy" alt="photo d un homme qui marche">
 			</picture>
 		</div>
 		
@@ -66,7 +68,7 @@
 </div>
 <section id="about">
 	<picture class="picture left">
-		<img src="./assets/images/nina_carducci.webp" temprop="image" width="450" height="450" alt="Photo de Nina Carducci">
+		<img src="./assets/images/nina_carducci.webp" width="450" height="450" alt="Photo de Nina Carducci">
 	</picture>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -79,15 +81,15 @@
 	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" alt="photo de la performance au concert" src="./assets/images/gallery/concerts/concert_first_picture.webp" loading="lazy" width="440" height="440">/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" alt="portrait d'une employée de l'entreprise" src="./assets/images/gallery/entreprise/enterprise_first_picture.webp"loading="lazy" width="440" height="440"> />
-			<img data-gallery-tag="Entreprises" class="gallery-item" alt="photo d'une employee" src="./assets/images/gallery/entreprise/enterprise_second_picture.webp"loading="lazy" width="440" height="440">/>
-			<img data-gallery-tag="Mariages" class="gallery-item" alt="photo de mariés joignant leurs mains" src="./assets/images/gallery/mariage/mariage_first_picture.webp" loading="lazy" width="440" height="440">/>
-			<img data-gallery-tag="Portrait" class="gallery-item" alt="portrait d'un jeune homme" src="./assets/images/gallery/portraits/portrait_first_picture.webp" loading="lazy" width="440" height="440">/>
-			<img data-gallery-tag="Mariages" class="gallery-item" alt="photos de jeunes mariés" src="./assets/images/gallery/mariage/mariage_second_picture.webp" loading="lazy" width="440" height="440">/>
-			<img data-gallery-tag="Portrait" class="gallery-item" alt="portrait d'une jeune fille" src="./assets/images/gallery/portraits/portrait_second_picture.webp" loading="lazy" width="440" height="440">/>
-			<img data-gallery-tag="Concert" class="gallery-item" alt="photo des spectateurs au concert"src="./assets/images/gallery/concerts/concert_second_picture.webp" loading="lazy" width="440" height="440">/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" alt="portrait d'un employé de l'entreprise" src="./assets/images/gallery/entreprise/enterprise_third_picture.webp" loading="lazy" width="440" height="440">/>
+			<img data-gallery-tag="Concert" class="gallery-item" alt="photo de la performance au concert" src="./assets/images/gallery/concerts/concert_first_picture.webp" loading="lazy" width="440" height="440">
+			<img data-gallery-tag="Entreprises" class="gallery-item" alt="portrait d'une employée de l'entreprise" src="./assets/images/gallery/entreprise/enterprise_first_picture.webp"loading="lazy" width="440" height="440"> 
+			<img data-gallery-tag="Entreprises" class="gallery-item" alt="photo d'une employee" src="./assets/images/gallery/entreprise/enterprise_second_picture.webp"loading="lazy" width="440" height="440">
+			<img data-gallery-tag="Mariages" class="gallery-item" alt="photo de mariés joignant leurs mains" src="./assets/images/gallery/mariage/mariage_first_picture.webp" loading="lazy" width="440" height="440">
+			<img data-gallery-tag="Portrait" class="gallery-item" alt="portrait d'un jeune homme" src="./assets/images/gallery/portraits/portrait_first_picture.webp" loading="lazy" width="440" height="440">
+			<img data-gallery-tag="Mariages" class="gallery-item" alt="photos de jeunes mariés" src="./assets/images/gallery/mariage/mariage_second_picture.webp" loading="lazy" width="440" height="440">
+			<img data-gallery-tag="Portrait" class="gallery-item" alt="portrait d'une jeune fille" src="./assets/images/gallery/portraits/portrait_second_picture.webp" loading="lazy" width="440" height="440">
+			<img data-gallery-tag="Concert" class="gallery-item" alt="photo des spectateurs au concert" src="./assets/images/gallery/concerts/concert_second_picture.webp" loading="lazy" width="440" height="440">
+			<img data-gallery-tag="Entreprises" class="gallery-item" alt="portrait d'un employé de l'entreprise" src="./assets/images/gallery/entreprise/enterprise_third_picture.webp" loading="lazy" width="440" height="440">
 		</div>
 	</div>
 	<div class="quote">
@@ -158,7 +160,7 @@
 				<input type="submit" value="Envoyer">
 			</form>
 		</div>
-		<picure class="picture right">
+		<picture class="picture right">
 			<img src="./assets/images/camera.webp" width="450" height="450" alt="image d'un appareil photo">
 		</picture>
 	</div>

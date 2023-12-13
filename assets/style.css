@@ -6,7 +6,7 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
-header {
+.top-header {
 	background-color: white;
 	position: sticky;
 	top:0;
@@ -18,7 +18,7 @@ header {
 	align-items: center;
 }
 
-header .name {
+.top-header .name {
 	font-size: 26px;
 }
 
