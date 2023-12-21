@@ -3,15 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" media="all">
+	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
+	<link rel="preload" as="image" href="./assets/images/slider/slider-nicholas-green.webp">
 	<meta name="language" content="fr-FR">
 	<meta name="robots" content="index" />
 	<meta name="description" content="Photographe passionnée par mon métier, je saisis les instants de vos événements ou de vos vies à travers des photographies. Je vous propose mes services (shooting photo, retrouches photos et albums photo)">
-	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" async></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
@@ -33,7 +34,7 @@
 	</div>
 </header>
 <main>
-<div id="banner">
+<section id="banner">
 
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
@@ -43,19 +44,20 @@
 		</div>
 		<div class="carousel-inner">
 			<picture class="carousel-item active">
-				<img src="./assets/images/slider/slide_first_concert.webp" class="d-block w-100" width="1920" height="888" loading="lazy" alt="photo des spectateurs au concert">
+				<source media="(max-width: 600px)" srcset="./assets/images/slider/slider-nicholas-green-mobile.webp"> 
+				<img src="./assets/images/slider/slider-nicholas-green.webp" class="d-block w-100" alt="photo des spectateurs au concert">
+			</picture>
+			
+			<picture class="carousel-item">
+				<source media="(max-width: 600px)" srcset="./assets/images/slider/slider-edward-cisneros-mobile.webp">
+				<img src="./assets/images/slider/slider-edward-cisneros.webp" class="d-block w-100" loading="lazy"  alt="photo des mariés">
 			</picture>
 			<picture class="carousel-item">
-				<img src="./assets/images/slider/slide_first_marriage.webp" class="d-block w-100" width="1920" height="888" loading="lazy" alt="photo des mariees">
-			</picture>
-			<picture class="carousel-item">
-				<img src="./assets/images/slider/slide_first_tokyo.webp" class="d-block w-100" width="1920" height="888" loading="lazy" alt="photo d un homme qui marche">
+				<source media="(max-width: 600px)" srcset="./assets/images/slider/slider-ryota-iwata-mobile.webp">
+				<img src="./assets/images/slider/slider-ryota-iwata.webp" class="d-block w-100" loading="lazy"  alt="photo d'un homme traversant la rue">
 			</picture>
 		</div>
 		
-		
-
-
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Previous</span>
@@ -65,10 +67,12 @@
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
-</div>
+</section>
+
+
 <section id="about">
 	<picture class="picture left">
-		<img src="./assets/images/nina_carducci.webp" width="450" height="450" alt="Photo de Nina Carducci">
+		<img src="./assets/images/nina.carducci.png" width="450" height="auto" loading="lazy" alt="Photo de Nina Carducci">
 	</picture>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -161,7 +165,7 @@
 			</form>
 		</div>
 		<picture class="picture right">
-			<img src="./assets/images/camera.webp" width="450" height="450" alt="image d'un appareil photo">
+			<img src="./assets/images/camera.webp" width="450" height="auto" alt="image d'un appareil photo">
 		</picture>
 	</div>
 </section>
